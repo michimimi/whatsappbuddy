@@ -1,0 +1,33 @@
+{
+  "name": "whatsappbuddy",
+  "version": "1.0.4",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michelle van der Meer",
+  "license": "ISC",
+  "description": "WhatsappBuddy to bridge Whatsapp Messages to discord. You can interact through these as well.",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "discord.js": "^14.15.3",
+    "pocketbase": "^0.21.3",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#webpack-exodus"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michimimi/whatsappbuddy.git"
+  },
+  "keywords": [
+    "Whatsapp",
+    "Bridge"
+  ],
+  "bugs": {
+    "url": "https://github.com/michimimi/whatsappbuddy/issues"
+  },
+  "homepage": "https://github.com/michimimi/whatsappbuddy#readme"
+}

@@ -1,0 +1,34 @@
+{
+    "DISCORD_BOT_TOKEN": "",
+    "GUILD_ID": "",
+    "CATEGORY_ID": "",
+    "INFO_CHANNEL_ID": "",
+    "embedMessageId": "",
+    "embedInfo": {
+        "color": 26111,
+        "title": "WhatsappBuddy Information",
+        "author": {
+            "name": "Michelle van der Meer"
+        },
+        "thumbnail": "https://i.imgur.com/rBCTjOr.gif",
+        "description": "This bot bridges WhatsApp and Discord. It creates a channel in Discord for each WhatsApp chat and relays messages between the two platforms.",
+        "fields": [
+            {
+                "name": "Feature 1",
+                "value": "Relays messages from WhatsApp to Discord and vice versa."
+            },
+            {
+                "name": "Feature 2",
+                "value": "Creates a new channel for each WhatsApp chat based on the chat ID."
+            },
+            {
+                "name": "Feature 3",
+                "value": "Displays messages sent by you differently for clarity."
+            }
+        ],
+        "image": "https://i.imgur.com/wY8ttHz.jpeg",
+        "timestamp": true
+    },
+    "channelMapping": {},
+    "channelNames": {}
+}
