@@ -22,8 +22,8 @@ This project bridges WhatsApp and Discord, creating a channel in Discord for eac
 1. **Clone the repository**:
 
     ```sh
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    git clone https://github.com/michimimi/whatsappbuddy.git
+    cd whatsappbuddy
     ```
 
 2. **Install Node.js dependencies**:
@@ -37,6 +37,10 @@ This project bridges WhatsApp and Discord, creating a channel in Discord for eac
     ```sh
     pip install Flask
     ```
+4. **Initilize the packages**:
+   ```sh
+   npm install
+   ```
 
 ## Configuration
 
