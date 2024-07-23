@@ -64,13 +64,6 @@ def main():
     with open('config.json', 'w') as config_file:
         json.dump(config, config_file, indent=4)
 
-    # Run the Node.js script to set up the Discord server
-    try:
-        result = subprocess.run(["node", "setup_discord.cjs"], check=True, text=True)
-        print(result.stdout)
-    except subprocess.CalledProcessError as e:
-        print("Error running setup_discord.cjs:", e)
-
     print("Setup complete. You can now run your bot.")
 
 if __name__ == "__main__":
