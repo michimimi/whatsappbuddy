@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 CLIENT_ID = None
 DISCORD_BOT_TOKEN = None
+GUILD_ID = None
 
 # Read configuration template
 with open('config_template.json', 'r') as config_file:
@@ -45,7 +46,7 @@ def close():
     return "Server shutting down..."
 
 def main():
-    global CLIENT_ID, DISCORD_BOT_TOKEN, embed_message_id
+    global CLIENT_ID, DISCORD_BOT_TOKEN, GUILD_ID
 
     print("Welcome to the WhatsApp-Discord Bot Setup")
     
@@ -55,14 +56,24 @@ def main():
     print("Please create a new server in Discord if you haven't already.")
     input("Press Enter after you have created the server...")
 
+    GUILD_ID = get_input("Enter the Server ID: ")
+
     webbrowser.open('http://127.0.0.1:5000')
     app.run(port=5000)
 
     config = config_template.copy()
     config['DISCORD_BOT_TOKEN'] = DISCORD_BOT_TOKEN
+    config['GUILD_ID'] = GUILD_ID
 
     with open('config.json', 'w') as config_file:
         json.dump(config, config_file, indent=4)
+
+    # Run the Node.js script to set up the Discord server
+    try:
+        result = subprocess.run(["node", "setup_discord.cjs"], check=True, text=True)
+        print(result.stdout)
+    except subprocess.CalledProcessError as e:
+        print("Error running setup_discord.cjs:", e)
 
     print("Setup complete. You can now run your bot.")
 
