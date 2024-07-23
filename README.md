@@ -49,7 +49,7 @@ This project bridges WhatsApp and Discord, creating a channel in Discord for eac
 2. **Run the setup script**:
 
     ```sh
-    python setup_bot.py
+    python setup.py
     ```
 
     Follow the prompts to enter your Discord Client ID, Bot Token, and Embed Message ID.
