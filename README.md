@@ -37,10 +37,6 @@ This project bridges WhatsApp and Discord, creating a channel in Discord for eac
     ```sh
     pip install Flask
     ```
-4. **Initilize the packages**:
-   ```sh
-   npm install
-   ```
 
 ## Configuration
 
